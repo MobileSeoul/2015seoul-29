@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/navi.css" />
+	<!-- 구글맵 API   -->
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+	<script type="text/javascript" src="../js/navi.js"></script>
+
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>길찾기</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="googleMap"></div>
+			<section>
+				<h2>교통안내</h2>
+					<dt><span class="car"></span>네비게이션 이용시</dt>
+						<dd>-&nbsp;&nbsp;주소&nbsp;:&nbsp;<span>서울특별시 중구 남대문로 39</span>(남대문로 3가 110)</dd>
+					<dt><span class="subway"></span>지하철</dt>
+						<dd>-&nbsp;&nbsp;1,2호선 시청역 7번 출구 이용 7번 출구로 나오신 후 횡단보도를 건너 좌회전 후 직진 하시다가 웨스턴조선호텔 앞 교차로에서 우회전 후 계속 직진하시면 오른편에 화폐박물관이 있습니다.</dd>
+						<dd>-&nbsp;&nbsp;2호선 을지로입구 7번출 구 이용 7번 출구로 나오신 후 롯데백화점 및 롯데영프라자를 따라 계속 직진하시면 화폐박물관이 있습니다.</dd>
+						<dd>-&nbsp;&nbsp;4호선 회현역 7번 출구 이용 7번 출구로 나오신 후 신세계백화점과 메사빌딩 사이로 계속 직진하시면 분수대가 보이고 그 맞은편에 화폐박물관이 있습니다.</dd>
+					<dt><span class="bus"></span>버스</dt>
+						<dd>-&nbsp;&nbsp;광역버스 2500, 9301, 9401, 9401B, 9701, 9702, 9703, 9709, 9710, 9714, M5107, M5115, M5121, M7106, M7111, M7119</dd>
+						<dd>-&nbsp;&nbsp;간선버스 100, 103, 104, 105, 143, 151, 152, 162, 163, 172, 201, 202, 261, 262, 401, 405, 406, 408, 421, 472, 500, 501, 503, 504, 505, 506, 507, 701, 702A, 702B, 704</dd>
+						<dd>-&nbsp;&nbsp;지선버스	7012A, 7013B, 7017, 7021, 7022</dd>
+						<dd>-&nbsp;&nbsp;순환버스	03, 05</dd>
+						<dd>-&nbsp;&nbsp;공항버스	6001, 6015, 6701</dd>
+						<dd>-&nbsp;&nbsp;직행버스 1000, 1005-1, 1100, 1150, 1200, 1900, 2000, 5000, 5005, 5007, 5500, 5500-1, 5500-2, 7900, 8100, 8880, 9000, 9001, 9003, 9080, 9300, 9301</dd>
+	
+				</dl>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

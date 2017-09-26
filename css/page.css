@@ -1,0 +1,39 @@
+#content nav>div{
+	box-sizing:border-box;
+	font-size:0; line-height:0;
+	overflow:hidden;
+	width:100%;
+}
+#content nav div h2{
+	width:100%; height:50px;
+	box-sizing:border-box;
+	text-align:center;
+	font:normal 20px/50px 'NanumGothicBold';
+}
+#content nav div img{
+	width:100%;
+	height:200px;
+}
+#content nav div div{
+	width:100%;
+}
+#content nav div div a{
+	display:block; float:left;
+	text-align:center;
+	font:normal 14px/44px 'NanumGothicBold';
+	width:33%;
+	box-sizing:border-box;
+	height:50px;
+}
+#content nav div div a:last-child{
+	border:0;
+	width:34%;
+}
+
+
+
+@media(min-width:500px){
+	#content nav div img{
+		height:500px;
+	}
+}

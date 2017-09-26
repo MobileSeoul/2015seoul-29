@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/navi.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+	<script type="text/javascript" src="../js/navi.js"></script>
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>길찾기</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="googleMap"></div>
+			<section>
+				<h2>교통안내</h2>
+					<dl>
+						<dt><span class="car"></span>네비게이션 이용시</dt>
+							<dd>-&nbsp;&nbsp;주소&nbsp;:&nbsp;<span>서울특별시 종로구 삼청동 산2-1</span>(숙정문)</dd>
+						<dt><span class="subway"></span>지하철</dt>
+							<dd>-&nbsp;&nbsp;3호선 경복궁 3번출구</dd>
+							<dd>-&nbsp;&nbsp;4호선 한성대입구 6번출구</dd>
+							<dd>-&nbsp;&nbsp;3호선 안국역 2번 출구</dd>
+							<dd>-&nbsp;&nbsp;5호선 광화문 2번출구</dd>
+							<dd>-&nbsp;&nbsp;4호선 한성대입구역 6번출구 -> 마을버스 성북 03번 ->팔각정 정류장 하차 -> 도보5분</dd>
+							<dd>-&nbsp;&nbsp;4호선 한성대입구역 5번출구 -> 도보  5분</dd>
+
+						<dt><span class="bus"></span>버스</dt>
+							<dd>-&nbsp;&nbsp;7212번-1020번-7022번->지하문 고개 하차 -> 도보 2분 숙정문 안내소(백악구간2-1)</dd>
+							<dd>-&nbsp;&nbsp;지선1111번-2112번->명수학교 하차- >도보20분 말소위 안내소(백악구간2-2)</dd>
+							<dd>-&nbsp;&nbsp;마을버스 종로02번->성균관대후문 하차 -> 도보 20분</dd>
+							<dd>-&nbsp;&nbsp;마을버스 종로11번->삼청공원 정류장하차-> 도보 20분 복정마 /와룡공원 (백악구간3)</dd>
+					</dl>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

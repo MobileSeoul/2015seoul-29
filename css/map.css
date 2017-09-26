@@ -1,0 +1,37 @@
+#content{width:100%; margin-top:10px;}
+#localMap{
+	width:95%; height:500px;
+	margin:0 auto; padding-top:10px;
+	box-sizing:border-box;
+}
+div.gm-style{color:#000;}
+@media(max-width:330px){
+	#localMap{
+		height:350px;
+	}
+}
+@media(min-width:350px){
+	#localMap{
+		height:500px;
+	}
+}
+@media(min-width:500px){
+	#localMap{
+		height:260px;
+	}
+}
+@media(min-height:700px){
+	#localMap{
+		height:600px;
+	}
+}
+@media(min-height:700px){
+	#localMap{
+		height:600px;
+	}
+}
+@media(min-height:1000px){
+	#localMap{
+		height:1000px;
+	}
+}

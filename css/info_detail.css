@@ -1,0 +1,56 @@
+#content{margin-top:20px;}
+#content section{width:95%; margin:0 auto 30px;}
+#content section>h2{width:100%; font:normal 24px 'NanumGothicBold'; margin-bottom:15px;}
+#content section>h2 span{display:block; font-size:12px;}
+#content section p{font:normal 14px 'NanumGothic';}
+#content section img, #content section dl{width:100%;}
+#content section>dl>dt{font:normal 20px 'NanumGothicBold'; margin-bottom:20px; margin-top:10px;}
+#content section>dl>dd{font:normal 16px 'NanumGothicBold';}
+#content section>dl>dd>ul{margin:3px 0 10px 20px; font:normal 14px 'NanumGothicBold';}
+#content section>dl>dd>ul>li{font:normal 14px 'NanumGothicBold';}
+#content section>dl>dd>ul>li>ul{margin:3px 0 10px 0;}
+#content section>dl>dd>ul>li>ul>li{font:normal 12px 'NanumGothic';}
+
+#content section table th, #content section table td{
+	border:1px solid #000;
+	box-sizing:border-box;
+	text-align:center;
+	padding:5px 0;
+}
+
+
+#content section table tr td.last{
+	text-align:left;
+}
+#content section table td ul{margin:0;}
+#content section ul.strate{margin:0;}
+#content section ul.strate li{font:normal 14px 'NanumGothicBold';}
+
+#content section table span.square{width:5px; height:5px;}
+#content section span.square{
+	display:inline-block; background-color:#000; width:8px; height:8px; margin:0 3px;
+}
+#content section span.car{
+	background:url('../images/info/car.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px; vertical-align:top;
+}
+#content section span.bus{
+	background:url('../images/info/bus.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}
+#content section span.subway{
+	background:url('../images/info/subway.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}
+#content section span.parking{
+	background:url('../images/info/parking.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}

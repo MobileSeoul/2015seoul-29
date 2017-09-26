@@ -1,0 +1,58 @@
+#dim{
+	width:100%; height:100%;
+	position:fixed; left:0; top:0; z-index:14;
+	background:#000;
+	opacity:0; filter:alpha(opacity=0);
+}
+#list{
+	width:250px; height:100%;
+	position:fixed; right:0; top:0; z-index:15;
+	box-sizing:border-box;
+	background:#2c2c2c;
+	overflow-y:scroll;
+	padding-top:100px;
+}
+#list button{
+	border:0;
+	background:url(../images/close.png) no-repeat;
+	background-size:40px 40px;
+	position:absolute; right:25px; top:30px;
+	font-size:0;
+	width:40px; height:40px;
+}
+#list ul li{
+	width:100%; height:100px;
+	background:#5d5d5d;
+	margin-bottom:2px;
+}
+#list ul li a{
+	display:block;
+	font:normal 20px/100px 'NanumGothicBold';
+	color:#fff;
+}
+#list ul li a span{
+	display:inline-block;
+	width:40px; height:40px;
+	margin:30px 15px;
+	float:left;
+}
+#list ul li a span.map{
+	background:url(../images/map_icon.png) no-repeat;
+	background-size:40px 40px
+}
+#list ul li a span.tample{
+	background:url(../images/tample_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#list ul li a span.tower{
+	background:url(../images/tower_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#list ul li a span.museum{
+	background:url(../images/museum_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#list ul li a span.park{
+	background:url(../images/park_icon.png) no-repeat;
+	background-size:40px 40px	
+}

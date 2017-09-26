@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/map.css" />
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>현재위치 주변검색</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="localMap"></div>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

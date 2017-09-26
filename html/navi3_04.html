@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/navi.css" />
+	<!-- 구글맵 API   -->
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+	<script type="text/javascript" src="../js/navi.js"></script>
+
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>길찾기</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="googleMap"></div>
+			<section>
+				<h2>교통안내</h2>
+					<dt><span class="car"></span>네비게이션 이용시</dt>
+						<dd>-&nbsp;&nbsp;주소&nbsp;:&nbsp;<span>서울특별시 송파구 올림픽로 424 </span></dd>
+					<dt><span class="subway"></span>지하철</dt>
+						<dd>-&nbsp;&nbsp;5호선(마천방면) 올림픽공원역 3번 출구</dd>
+						<dd>-&nbsp;&nbsp;8호선 몽촌토성역 1번 출구 </dd>
+
+
+					<dt><span class="bus"></span>버스</dt>
+						<dd>-&nbsp;&nbsp;지선 3220,3319(서울체육중고등학교) 북2문 도보 15분</dd>
+						<dd>-&nbsp;&nbsp;지선 3212,3214,3220,3318,3319,3411(풍납동극동.쌍용아파트) 북1문 도보 15분</dd>
+						<dd>-&nbsp;&nbsp;340,341,351,(풍납동극동.쌍용아파트) 북1문 도보 15분</dd>
+						<dd>-&nbsp;&nbsp;마을 강동01 (풍납동극동.쌍용아파트) 북1문 도보 15분</dd>
+				</dl>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

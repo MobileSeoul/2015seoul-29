@@ -1,0 +1,30 @@
+#content{width:95%; margin:0 auto;}
+#content section{width:100%;}
+#content div#googleMap{width:100%; margin:10px auto 30px; height:300px; }
+#content section h2{width:100%; font:normal 24px 'NanumGothicBold'; margin-bottom:20px;}
+#content section dt{font:normal 18px/20px 'NanumGothicBold'; margin:15px 0;}
+#content section dd{font:normal 14px/18px 'NanumGothicBold'; margin-bottom:5px;}
+#content section span.car{
+	background:url('../images/info/car.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}
+#content section span.bus{
+	background:url('../images/info/bus.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}
+#content section span.subway{
+	background:url('../images/info/subway.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}
+#content section span.parking{
+	background:url('../images/info/parking.png') center no-repeat;
+	background-size:20px 20px;
+	display:inline-block; width:20px; height:20px;
+	margin-right:5px;vertical-align:top;
+}

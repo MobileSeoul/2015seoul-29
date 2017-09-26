@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/navi.css" />
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<!script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+	<script>
+		$(function(){
+			var loc=$("#content section h2 span").text();
+			
+
+			var directionsDisplay;
+			var directionsService = new google.maps.DirectionsService();
+			var map;
+
+			 function initialize() {
+				 directionsDisplay = new google.maps.DirectionsRenderer();
+
+				navigator.geolocation.getCurrentPosition (function (posOption){
+							lat = posOption.coords.latitude;
+							lng = posOption.coords.longitude;
+							var latlng= new google.maps.LatLng(lat, lng);
+				var start = new google.maps.LatLng(lat, lng);
+				var end = loc;
+				var mode = 'TRANSIT'
+				var request = {
+					origin:start,
+					destination:end,
+					travelMode: eval('google.maps.DirectionsTravelMode.'+mode)
+				};        
+			   
+				directionsService.route(request, function(response, status) {
+								
+								if (status == google.maps.DirectionsStatus.OK) {
+									directionsDisplay.setDirections(response);
+								}
+							});
+
+				
+				   var mapProp = {
+					 center:new google.maps.LatLng(lat, lng),
+					 zoom:10,
+					 radius:20000,
+					 
+					 mapTypeId:google.maps.MapTypeId.ROADMAP
+
+				   };
+					
+				  map=new google.maps.Map(document.getElementById("localMap"),mapProp);
+				  var myCity = new google.maps.Circle({
+				  center:new google.maps.LatLng(lat, lng),
+				  radius:500,
+				  strokeColor:"#0000FF",
+				  strokeOpacity:0.8,
+				  strokeWeight:2,
+				  fillColor:"#0000FF",
+				  fillOpacity:0.4
+				  });
+
+				 directionsDisplay.setMap(map);
+				// Zoom to 9 when clicking on marker
+
+			  });
+			}
+
+			 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+		});
+</script>
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>길찾기</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="localMap"></div>
+			<section>
+				<h2>교통안내</h2>
+					<dl>
+						<dt><span class="car"></span>네비게이션 이용시</dt>
+							<dd>-&nbsp;&nbsp;주소&nbsp;:&nbsp;서울 중구 세종대로99(우 04519)</dd>
+						<dt><span class="subway"></span>지하철</dt>
+							<dd>-&nbsp;&nbsp;월계역 2번출구 50m앞에서 147 간선버스로 환승후 10분</dd>
+							<dd>-&nbsp;&nbsp;석계역 2번출구 우측 20m (횡단보도 건너편) 성북14 마을버스 환승 후 10분</dd>
+							<dd>-&nbsp;&nbsp;미아사거리역 1번출구 10m앞 강북09, 강북11 마을버스 환승후 10분</dd>
+							<dd>-&nbsp;&nbsp;돌곶이역 3번출구 30m앞 147 간선버스로 환승후 6분</dd>
+							<dd>-&nbsp;&nbsp;하계역 5번출구 80m앞 100 간선버스로 환승 후 10분</dd>
+						<dt><span class="bus"></span>버스</dt>
+							<dd>-&nbsp;&nbsp;147번, 100번, 성북14, 강북09, 강북11</dd>
+					</dl>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

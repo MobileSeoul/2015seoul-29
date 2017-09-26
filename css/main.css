@@ -1,0 +1,56 @@
+body, html{
+	background:#99212a;
+}
+#header{
+	background:#99212a url('../images/headerIcon.png') no-repeat 25px center;;
+	background-size:50px 50px;
+}
+
+#content nav div{
+	box-sizing:border-box;
+	overflow:hidden;
+	width:100%; height:110px;
+	margin-bottom:3px;
+}
+#content nav div:last-child{
+	margin-bottom:0;
+}
+#content nav div a{
+	display:block; box-sizing:border-box;
+	padding-right:100px;
+	width:100%; text-align:center;
+	float:left;
+	color:#fff;
+	font:normal 20px/110px 'NanumGothicBold';
+}
+#content nav div a span{
+	display:inline-block;
+	width:40px; height:40px;
+	margin:35px;
+	margin-left:25px;
+	float:left;
+}
+#content nav div a{
+	background-color:#cb2733;
+}
+#content nav div.map a span{
+	background:url(../images/map_icon.png) no-repeat;
+	background-size:40px 40px
+}
+#content nav div.tample a span{
+	background:url(../images/tample_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#content nav div.tower a span{
+	background:url(../images/tower_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#content nav div.museum a span{
+	background:url(../images/museum_icon.png) no-repeat;
+	background-size:40px 40px	
+}
+#content nav div.park a span{
+	background: url(../images/park_icon.png) no-repeat;
+	background-size: 50px 40px;
+	background-position: -5px 0;
+}

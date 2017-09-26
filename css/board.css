@@ -1,0 +1,119 @@
+#content section.section_copy{width:100%; height:92px; background-color:#ffecde;}
+#content section.search{
+	position:fixed; left:0; top:80px; width:100%; z-index:10;
+	background-color:#ffecde;}
+#content section.search form{width:100%; background:none; padding:0; margin-bottom:10px; border-bottom:1px solid #294376;}
+#content section.search form fieldset{overflow:hidden; width:90%; margin:0 auto;}
+#content section.search form input{
+	box-sizing:border-box; border:0;
+	display:block; width:280px; height:30px; float:left;
+	font:normal 14px/30px 'NanumGothicBold'; color:#d8d8d8; background:none; 
+}
+#content section.search form a{
+	display:block; float:left; width:20px; height:20px; margin-right:20px; margin-top:5px;
+	font-size:0; background:url('../images/icon/search.png') no-repeat; background-size:20px 20px;}
+#content section.write{
+	position:fixed; left:0; top:120px; z-index:10;
+	box-sizing:border-box; border-top:2px solid #858182; border-bottom:2px solid #858182;
+	width:100%; height:50px; text-align:center;
+	background:#fff url('../images/icon/write.png') no-repeat 30% center; background-size:30px 30px;
+}
+#content section.write a{
+	display:block; font:normal 24px/46px 'NanumGothicBold'; color:#000;
+}
+#content section.subject{
+	box-sizing:border-box;
+	border-radius:5px; position:relative;
+	padding:0 10px 10px 10px; margin:10px auto;
+	opacity:0.9; filter:alpha(opacity=90);
+	width:95%; background-color:#fff;
+}
+
+#content section.subject div{border-bottom:2px solid #d8d8d8; overflow:hidden;}
+#content section.subject div h3{float:left; font:normal 14px/30px 'NanumGothicBold'; color:#000; margin-right:30px;}
+#content section.subject div span{font:normal 12px/30px 'NanumGothic'; color:#a9a9a9; display:block; float:left;}
+#content section.subject div a{display:block; float:right; color:#a9a9a9; font:normal 12px/30px 'NanumGothic';}
+#content section.subject p{
+	width:100%; margin-top:10px;
+	font:normal 12px/20px 'NanumGothicBold'; color:#000;
+	text-overflow: ellipsis; overflow:hidden; white-space:nowrap;
+}
+#content section ul{
+	width:100%; height:30px;
+	display:none;
+	position:absolute; left:0; bottom:0;
+	border-top:1px solid #000;
+	border-radius:0 0 5px 5px;
+}
+#content section ul li{
+	width:50%; box-sizing:border-box;
+	border-right:1px solid #000;
+	background:#fff; text-align:center;
+	border-radius:0 0 0 5px;
+}
+#content section ul li a{
+	display:block;
+	font:normal 12px/30px 'NanumGothicBold'; color:#000;
+	
+}
+#content section ul li:last-child{
+	border:0;
+	border-radius:0 0 5px 0;
+}
+#footer{
+	width:100%; height:50px; 
+	background-color:#fff; color:#000; text-align:center;
+	font:normal 24px/50px 'NanumGothicBold'; color:#000;
+	position:fixed; left:0; bottom:0;	
+}
+.footer_copy{
+	width:100%; height:50px; content:"";
+}
+
+#content section p.show{
+	height:200px;
+	white-space:pre-line;
+}
+#content section ul.show{
+	display:block;
+	display:box; display:-webkit-box;
+}
+.dim{
+	position:fixed; left:0; top:0; background:#000;
+	display:none;
+	opacity:0.8; filter:alpha(opacity=80);
+	width:100%; height:100%; z-index:19;
+}
+section.pop{
+	position:fixed; left:50%; top:50%; background:#fff;
+	padding:20px 50px; display:none;
+	margin-left:-150px; margin-top:-150px;
+	border:3px solid #bababa;
+	box-sizing:border-box; border-radius:15px;
+	width:300px; height:250px; z-index:20;
+}
+section.pop p{
+	font:normal 24px 'NanumGothicBold'; color:#000;
+	text-align:center;
+	margin-bottom:20px;
+}
+section.pop input{
+	display:block; width:100%; height:30px; text-align:center; border:0;
+	box-sizing:border-box; margin:0 auto; color:#000;
+	border-radius:5px; background:#eee;
+	border:2px solid #bababa;
+}
+section.pop div{width:100%; margin-top:50px;}
+section.pop div button{
+	width:45%; height:30px;
+	box-sizing:border-box; color:#000;
+	border-radius:5px; background:#eee;
+	border:2px solid #bababa;
+	font:normal 12px/26px 'NanumGothicBold';
+}
+section.pop div button[type=submit]{
+	float:left;  padding-right:28px; text-align:right;
+	background:#eee url('../images/icon/delete.png') no-repeat 20px 5px; 
+	background-size:15px 15px;
+}
+section.pop div button[type=button]{float:right}

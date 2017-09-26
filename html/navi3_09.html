@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/navi.css" />
+	<!-- 구글맵 API   -->
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/map.js"></script>
+	<script type="text/javascript" src="../js/navicolor.js"></script>
+	<script type="text/javascript" src="../js/navi.js"></script>
+
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a href="javascript:history.back();">이전</a>
+			<h1>길찾기</h1>
+			<button type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<div id="googleMap"></div>
+			<section>
+				<h2>교통안내</h2>
+					<dt><span class="car"></span>네비게이션 이용시</dt>
+						<dd>-&nbsp;&nbsp;주소&nbsp;:&nbsp;<span>03141 서울특별시 종로구 세종대로 198 대한민국역사박물관</span></dd>
+					<dt><span class="subway"></span>지하철</dt>
+						<dd>-&nbsp;&nbsp;5호선5호선 광화문역 2번출구 (약 250m)</dd>
+						<dd>-&nbsp;&nbsp;3호선3호선 경복궁역 6번출구 (약 500m)</dd>
+						<dd>-&nbsp;&nbsp;3호선 안국역 6번출구 (약 800m)</dd>
+					<dt><span class="bus"></span>버스</dt>
+						<dd>-&nbsp;&nbsp;파랑버스(간선노선) 103, 109, 150, 171, 272, 401, 402(심야), 406, 408, 601, 606, 607, 700, 704, 706, 707, 708</dd>
+						<dd>-&nbsp;&nbsp;빨강버스(광역노선) :초록버스(지선노선) : 1020, 1711, 7016, 7018, 7022, 7025, 7212</dd>
+						<dd>-&nbsp;&nbsp;초록버스(지선노선) :빨강버스(광역노선) : 9401, 9401B, 9703</dd>
+						<dd>-&nbsp;&nbsp;직행버스 : 직행버스 : 005-1광주, 5000용인, 5500-1광주, 5500-2광주, 9000광주</dd>
+						<dd>-&nbsp;&nbsp;초록버스(지선노선) :마을버스 : 종로09, 종로1</dd>
+	
+				</dl>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>게시판</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/side_menu.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css" />
+	<link rel="stylesheet" type="text/css" href="../css/board.css" />
+	<script type="text/javascript" src="../js/jquery_1.11.3.js"></script>
+	<script type="text/javascript" src="../js/jqueryUI.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/board.js"></script>
+</head>
+<body>
+	<section id="wrap">
+		<header id="header">
+			<a class="board" href="javascript:history.back();">이전</a>
+			<h1 class="board">게시판</h1>
+			<button class="board" type="button">Side</button>
+		</header>
+		<div class="header_copy"></div>
+		<div id="content">
+			<section class="section_copy"></section>
+			<section class="search">
+				<form name="boardForm">
+					<fieldset>
+						<legend>검색</legend>
+						<a href="#">검색</a>
+						<input name="userid" type="text" value="검색하실 아이디를 적어주세요." />
+					</fieldset>
+				</form>
+			</section>
+			<section class="write">
+				<a href="write.html">글쓰기</a>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+			<section class="subject">
+				<div>
+					<h3>작성자</h3>
+					<span>2015.10.18</span>
+					<a href="#">삭제</a>
+				</div>
+				<p>즐거운하루였습니다. 다음에 또 가보고 싶네요</p>
+			</section>
+		</div>
+	</section>
+	<div id="dim"></div>
+	<aside id="list">
+		<ul>
+			<li><a href="map.html"><span class="map"></span>현재위치 주변검색</a></li>
+			<li><a href="page1.html"><span class="tample"></span>궁</a></li>
+			<li><a href="page2.html"><span class="tower"></span>문화재</a></li>
+			<li><a href="page3.html"><span class="museum"></span>박물관</a></li>
+			<li><a href="page4.html"><span class="park"></span>공원</a></li>
+		</ul>
+		<button type="button">닫기</button>
+	</aside>
+	<div class="dim"></div>
+	<section class="pop">
+		<form name="delete" action="#" method="post">
+			<fieldset>
+				<legend>삭제폼</legend>
+				<p>
+					정말로<br />
+					삭제하시겠습니까?
+				</p>
+				<input type="text" onkeyup="xTrim(this,4)" placeholder="비밀번호" />
+				<div>
+					<button type="submit">삭제</button>
+					<button class="cancle" type="button">취소</button>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
